@@ -1,10 +1,10 @@
 import React from 'react';
 
-function DefaultLayout(props) {
+function OutputLayout(props) {
   return (
     <html>
       <head>
-        <link href="/css/default.css" rel="stylesheet" />
+        <link href="/css/chat-output.css" rel="stylesheet" />
         <title>{props.title}</title>
       </head>
       <body>
@@ -14,4 +14,4 @@ function DefaultLayout(props) {
   );
 }
 
-module.exports = DefaultLayout;
+module.exports = OutputLayout;

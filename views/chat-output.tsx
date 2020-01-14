@@ -1,10 +1,10 @@
 var React = require('react');
-var DefaultLayout = require('./layouts/default');
+var OutputLayout = require('./layouts/output');
 import StartLiveStream from './components/startlivestream';
 
 function HelloMessage(props) {
   return (
-    <DefaultLayout title={props.title} id="chatFrame">
+    <OutputLayout title={props.title} id="chatFrame">
       <div id="ChatFrame">
         <div id="ChatItems">
           <span>This is a proof-of-concept from the team at <a href="https://webchat.ws/">webchat.ws</a>.<br /></span>
@@ -13,7 +13,7 @@ function HelloMessage(props) {
           <div><span>If you're seeing this, something's broken!</span></div>
         </div>
       </div>
-    </DefaultLayout>
+    </OutputLayout>
   );
 }
 
