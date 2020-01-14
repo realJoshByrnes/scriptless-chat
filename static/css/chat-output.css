@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#ChatFrame {
+  border: 1px dashed black;
+  overflow-y: auto;
+  transform: scale(1, -1);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0px;
+}
+
+#ChatItems {
+  transform: scale(1, -1);
+  overflow-wrap: break-word;
+}
+
+@keyframes yellowfade {
+  from {
+    background:violet;
+  }
+  to {
+    background: transparent;
+  }
+}
+
+#ChatItems > * {
+  animation: yellowfade 1s;
+  transition: background-color 1s linear;
+}

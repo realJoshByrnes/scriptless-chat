@@ -1,6 +1,6 @@
 import Express from 'express';
 
-const marker: string = '<!-- STARTLIVESTREAM -->';
+const marker: string = '<span style="display:none">STARTLIVESTREAM</span>';
 
 export default function(req: Express.Request, res: Express.Response, next: Express.NextFunction) {
   const originalSend = res.send;
@@ -21,7 +21,7 @@ export default function(req: Express.Request, res: Express.Response, next: Expre
         res.flushHeaders();
 
         const everySecond = setInterval(()=>{
-          res.write(`<span>The current time is ${new Date()}</span><br>`);
+          res.write(`<div><span>The current time is ${new Date()}</span></div>`);
         }, 1000);
         res.connection.on('close', (hadError: boolean) => {
           clearInterval(everySecond);
