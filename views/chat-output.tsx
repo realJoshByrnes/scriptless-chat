@@ -2,7 +2,7 @@ var React = require('react');
 var OutputLayout = require('./layouts/output');
 import StartLiveStream from './components/startlivestream';
 
-function HelloMessage(props) {
+function ChatOutput(props) {
   return (
     <OutputLayout title={props.title} id="chatFrame">
       <div id="ChatFrame">
@@ -17,4 +17,4 @@ function HelloMessage(props) {
   );
 }
 
-module.exports = HelloMessage;
+module.exports = ChatOutput;

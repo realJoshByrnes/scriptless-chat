@@ -3,16 +3,18 @@ body, html {
   width: 100%;
   padding: 0;
   margin: 0;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
 #ChatFrame {
-  border: 1px dashed black;
   overflow-y: auto;
   transform: scale(1, -1);
   height: 100%;
   padding: 0;
   margin: 0;
-  border: 0px;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 #ChatItems {
@@ -20,16 +22,23 @@ body, html {
   overflow-wrap: break-word;
 }
 
-@keyframes yellowfade {
-  from {
-    background:violet;
-  }
-  to {
-    background: transparent;
-  }
-}
-
 #ChatItems > * {
+  /* display: none; */
   animation: yellowfade 1s;
   transition: background-color 1s linear;
+}
+/* Last 100 items. TODO: Troubleshoot Chrom issue? (working in FF) */
+/* #ChatItems > *:nth-last-child(-n+3) {
+  display: block;
+} */
+
+
+
+@keyframes yellowfade {
+  from {
+    background-color: violet;
+  }
+  to {
+    background-color: transparent;
+  }
 }

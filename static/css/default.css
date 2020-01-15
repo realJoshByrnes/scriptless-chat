@@ -1,3 +1,26 @@
+html, body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  padding: 8px;
+}
+
 .chat-output {
   width: 100%;
+  border: none;
+  height: calc(100% - 24px - 8px); /* TODO */
+  box-sizing: border-box;
+}
+
+.chat-input {
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  height: 24px;
+  box-sizing: border-box;
 }
