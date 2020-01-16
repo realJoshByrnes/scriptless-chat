@@ -18,7 +18,6 @@ export default function(req: Express.Request, res: Express.Response, next: Expre
         const originalEnd = res.end;
         res.type('html');
         res.write(body, 'utf8');
-        res.flushHeaders();
 
         const everySecond = setInterval(()=>{
           res.write(`<div><span>The current time is ${new Date()}</span></div>`);
