@@ -5,6 +5,10 @@ import StartLiveStream from './components/startlivestream';
 function ChatOutput(props) {
   return (
     <OutputLayout title={props.title} id="chatFrame">
+      <div id="ChatNicklist">
+        <div class="user">Sky</div>
+        <div class="user">JD</div>
+      </div>
       <div id="ChatFrame">
         <div id="ChatItems">
           <span>This is a proof-of-concept from the team at <a href="https://webchat.ws/">webchat.ws</a>.<br /></span>

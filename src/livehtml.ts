@@ -22,7 +22,7 @@ export default function(req: Express.Request, res: Express.Response, next: Expre
 
         const everySecond = setInterval(()=>{
           res.write(`<div><span>The current time is ${new Date()}</span></div>`);
-        }, 1000);
+        }, 5000);
         res.connection.on('close', (hadError: boolean) => {
           clearInterval(everySecond);
           console.log(`Connection closed. Had error: ${hadError}`);
