@@ -6,7 +6,7 @@ function ChatInput(props) {
     <Layout title={props.title} id="chatInput">
       <form method="post" target="_self" autoComplete="off">
         <input name="_csrf" type="hidden" value="....." readOnly />
-        <input className="input-box" name="data" type="text" value="" />
+        <input className="input-box" name="data" type="text" value="" autoFocus />
         <input className="send-button" type="submit" value="send" />
       </form>
     </Layout>
