@@ -1,3 +1,4 @@
 {
-  "port": 8080
+  "port": 8080,
+  "cookieSecret": "Ba'?9[VB!2tj49w)p]_w%m^E$<*gyvu%(59gf#bbgbEhX.kXfPsz@Bkh%EDQ+z5y"
 }

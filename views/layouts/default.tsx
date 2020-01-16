@@ -5,7 +5,7 @@ function DefaultLayout(props) {
     <html>
       <head>
         <link href="/css/default.css" rel="stylesheet" />
-        <title>{props.title}</title>
+        <title>{props.title} :: WebChat.ws</title>
       </head>
       <body>
         {props.children}

@@ -23,7 +23,6 @@ body, html {
 }
 
 #ChatItems > * {
-  /* display: none; */
   animation: yellowfade 1s;
   transition: background-color 1s linear;
 }
@@ -43,9 +42,14 @@ body, html {
 .user:hover {
   background-color: yellow;
 }
-/* Last 100 items. TODO: Troubleshoot Chrom issue? (working in FF) */
-/* #ChatItems > *:nth-last-child(-n+3) {
-  display: block;
+/*
+  TODO: Report Chromium issue? (working in FF, Not so in Edge/Chrome)
+  NOTE: Only doesn't work in our LiveHTML pages.
+  Show only last 100 items - might reduce memory usage?
+  - All of a sudden, chrome started displaying nothing (0 lines) because of this?!
+*/
+/* #ChatItems > *:not(:nth-last-child(-n+100)) {
+  display: none;
 } */
 
 

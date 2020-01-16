@@ -6,8 +6,8 @@ import ChatInput from './components/chat-input-iframe';
 function Index(props) {
   return (
     <DefaultLayout title={props.title}>
-      <ChatOutput />
-      <ChatInput />
+      <ChatOutput chatSessionId={props.chatSessionId} />
+      <ChatInput chatSessionId={props.chatSessionId} />
     </DefaultLayout>
   );
 }

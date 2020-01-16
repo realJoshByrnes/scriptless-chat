@@ -5,7 +5,7 @@ function InputLayout(props) {
     <html>
       <head>
         <link href="/css/chat-input.css" rel="stylesheet" />
-        <title>{props.title}</title>
+        <title>WebChat.ws</title>
       </head>
       <body>
         {props.children}

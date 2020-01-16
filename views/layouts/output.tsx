@@ -5,7 +5,7 @@ function OutputLayout(props) {
     <html>
       <head>
         <link href="/css/chat-output.css" rel="stylesheet" />
-        <title>{props.title}</title>
+        <title>WebChat.ws</title>
       </head>
       <body>
         {props.children}

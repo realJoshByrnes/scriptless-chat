@@ -11,8 +11,8 @@ function ChatOutput(props) {
       </div>
       <div id="ChatFrame">
         <div id="ChatItems">
-          <span>This is a proof-of-concept from the team at <a href="https://webchat.ws/">webchat.ws</a>.<br /></span>
-          <span>Messages should be loaded in real-time.<br /></span>
+          <div><span>This is a proof-of-concept from the team at <a href="https://webchat.ws/">webchat.ws</a>.<br /></span></div>
+          <div><span>Messages should be loaded in real-time.<br /></span></div>
           <StartLiveStream />
           <div><span>If you're seeing this, something's broken!</span></div>
         </div>
