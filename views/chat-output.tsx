@@ -6,8 +6,8 @@ function ChatOutput(props) {
   return (
     <OutputLayout title={props.title} id="chatFrame">
       <div id="ChatNicklist">
-        <div class="user">Sky</div>
-        <div class="user">JD</div>
+        <div className="user">Sky</div>
+        <div className="user">JD</div>
       </div>
       <div id="ChatFrame">
         <div id="ChatItems">
